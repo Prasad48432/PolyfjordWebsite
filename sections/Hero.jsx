@@ -43,9 +43,9 @@ const Hero = () => (
         <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
             <img
-              src="/stamp_poly.png"
+              src="/polyfjord_stamp.png"
               alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
+              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain rounded-full border-solid border-white border-4"
             />
           </div>
         </a>
