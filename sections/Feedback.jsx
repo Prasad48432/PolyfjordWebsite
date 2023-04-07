@@ -72,7 +72,7 @@ const Feedback = () => (
           className="absolute -left-[10%] top-[3%]"
         >
           <img
-            class="rounded-full w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] relative bottom-[58rem] sm:bottom-0 left-[18rem] sm:left-[-8rem]"
+            className="rounded-full w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] relative bottom-[58rem] sm:bottom-0 left-[18rem] sm:left-[-8rem]"
             src="/asborjn.png"
             alt="Extra large avatar"
           />
