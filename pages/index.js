@@ -19,13 +19,13 @@ const Home = () => (
       <div className="gradient-03 z-0" />
     </div>
     <div className="relative">
-    <Gumroad />
+      <Gumroad />
       <div className="gradient-03 z-0" />
     </div>
     <div className="relative">
-    <Merch />
-    <div className="gradient-03 z-0" />
-    <Feedback />
+      <Merch />
+      <div className="gradient-03 z-0" />
+      <Feedback />
     </div>
     <Footer />
   </div>
