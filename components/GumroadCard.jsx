@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '../utils/motion';
 
-const InsightCard = ({ imgUrl, title, subtitle, index }) => (
+const GumroadCard = ({ imgUrl, title, subtitle, link, index }) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.2, 0.5)}
     className="flex  flex-col items-center justify-center md:flex-col gap-4"
@@ -16,11 +16,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     />
     <div className="w-full flex justify-between items-center">
       <div className="flex-1 flex flex-col max-w-[650px]">
-        <a
-          href="https://www.patreon.com/polyfjord"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <h4 className="font-normal lg:text-[30px] text-[26px] text-white text-center">
             {title}
           </h4>
@@ -33,4 +29,4 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   </motion.div>
 );
 
-export default InsightCard;
+export default GumroadCard;

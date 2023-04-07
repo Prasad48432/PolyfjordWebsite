@@ -16,7 +16,6 @@ const GetStarted = () => (
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
   >
-  <h1 className='text-center font-bold text-4xl text-white'>My Products</h1>
   </motion.div>
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -67,7 +66,7 @@ const GetStarted = () => (
       href="https://blendermarket.com/products/mechanical-creature-kit"
       rel="noopener noreferrer"
     >
-      <div className="sm:w-[60%] rounded-[10px] glassmorphism flex sm:ml-[-50px] justify-center items-center sm:bottom-[5rem] relative">
+      <div className="sm:w-[55%] rounded-[10px] glassmorphism flex sm:ml-[-50px]np justify-center items-center sm:bottom-[5rem] relative">
         <h1 className="text-white p-3 capitalize">checkout product</h1>
         <img src="/arrow.svg" alt="/" />
       </div>

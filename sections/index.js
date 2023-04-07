@@ -6,6 +6,8 @@ import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
+import Gumroad from './Gumroad';
+import Merch from './Merch';
 
 export {
   Hero,
@@ -16,4 +18,6 @@ export {
   World,
   Insights,
   Feedback,
+  Gumroad,
+  Merch,
 };

@@ -105,7 +105,45 @@ export const insights = [
     subtitle:
         'Become a true legend. If you enjoy my tutorials a lot, and want to make a generous donation towards my work - this will allow me to focus more on making great tutorials',
         link: 'https://www.patreon.com/polyfjord',
+  }
+];
+
+export const gumroad = [
+  {
+    imgUrl: 'https://public-files.gumroad.com/1mxt630t1zh5cu4rvhbkrr8ym9er',
+    title: 'Twisting Crystals',
+    subtitle:
+        'Project file from my Twisting Crystals tutorial The project file has two scenes',
+    link: 'https://polyfjord.gumroad.com/l/EkFvO?layout=profile'
   },
+  {
+    imgUrl: 'https://public-files.gumroad.com/d9dhf3xxs8aup38dom1le3vco41t',
+    title: 'Five Textures',
+    subtitle:
+        'A ready-to-render scene with five customizable materials for Blender 2.80',
+    link: 'https://polyfjord.gumroad.com/l/rFBMz?layout=profile',
+  },
+  {
+    imgUrl: 'https://public-files.gumroad.com/zftxj03bng53ztjsujl48otqtkti',
+    title: 'Animated Turret',
+    subtitle:
+        'Turret model for blender 2.80 from the Real Time Animation tutorial by Polyfjord',
+        link: 'https://polyfjord.gumroad.com/l/kVMkU?layout=profile',
+  },
+  {
+    imgUrl: 'https://public-files.gumroad.com/pq577cww7tqkoucdbp6dwiy94rkm',
+    title: 'Real Time Animation',
+    subtitle:
+        'Micro Turret model with procedural textures, ready to render in Cycles 4K footage shot',
+        link: 'https://polyfjord.gumroad.com/l/VzSKg?layout=profile',
+  },
+  {
+    imgUrl: 'https://public-files.gumroad.com/variants/ors59fqknykxtys407wm3wdem7as/e82ce07851bf15f5ab0ebde47958bb042197dbcdcae02aa122ef3f5b41e97c02',
+    title: 'Mechanical Creature Kit',
+    subtitle:
+        '250+ photorealistic mechanical parts 28 realistic procedural materials 10 animated rigs & more.',
+        link: 'https://www.patreon.com/polyfjord',
+  }
 ];
 
 export const socials = [
@@ -128,5 +166,10 @@ export const socials = [
     name: 'facebook',
     url: '/facebook.svg',
     link:'https://facebook.com/polyfjord',
+  },
+  {
+    name: 'discord',
+    url: '/discord.svg',
+    link:'https://discord.com/invite/polyfjord',
   },
 ];

@@ -21,7 +21,7 @@ const Insights = () => (
       <TitleText title={<>Support me on Patreon</>} textStyles="text-center" />
       <img src='/patreon.svg' alt="patreon" className= 'relative w-[30px] h-[30px] top-2 sm:w-[50px] sm:h-[50px] sm:top-3'/>
       </div>
-      <div className="mt-[50px] flex flex-col gap-[30px]">
+      <div className="mt-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[30px]">
         {insights.map((item, index) => (
           <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
