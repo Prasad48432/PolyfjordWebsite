@@ -14,7 +14,7 @@ export const navVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 1,
+      delay: 0.4,
     },
   },
 };
@@ -56,7 +56,7 @@ export const textVariant = (delay) => ({
     opacity: 1,
     transition: {
       type: 'spring',
-      duration: 1.25,
+      duration: 0.75,
       delay,
     },
   },
@@ -114,7 +114,7 @@ export const planetVariants = (direction) => ({
     x: 0,
     transition: {
       type: 'spring',
-      duration: 1.8,
+      duration: 1,
       delay: 0.5,
     },
   },
@@ -128,12 +128,6 @@ export const zoomIn = (delay, duration) => ({
   show: {
     scale: 1,
     opacity: 1,
-    transition: {
-      type: 'tween',
-      delay,
-      duration,
-      ease: 'easeOut',
-    },
   },
 });
 

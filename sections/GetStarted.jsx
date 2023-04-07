@@ -67,7 +67,7 @@ const GetStarted = () => (
       href="https://blendermarket.com/products/mechanical-creature-kit"
       rel="noopener noreferrer"
     >
-      <div className="w-[40%] rounded-[10px] glassmorphism flex sm:ml-[70px] justify-center items-center bottom-[5rem] relative">
+      <div className="sm:w-[40%] rounded-[10px] glassmorphism flex sm:ml-[70px] justify-center items-center sm:bottom-[5rem] relative">
         <h1 className="text-white p-3 capitalize">checkout product</h1>
         <img src="/arrow.svg" alt="/" />
       </div>
