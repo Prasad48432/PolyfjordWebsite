@@ -25,7 +25,7 @@ const Insights = () => (
           whileInView="show"
           className={`mt-[8px] font-bold md:text-[64px] text-[26px] text-white text-center`}
         >
-          Support me on <a className='transition ease-in-out hover:underline duration-300'  href="https://patreon.com/polyfjord" target="_blank" rel="noopener noreferrer" >Patreon</a>
+          Support me on <a className='transition ease-in-out text-gray-200 underline duration-300'  href="https://patreon.com/polyfjord" target="_blank" rel="noopener noreferrer" >Patreon</a>
         </motion.h2>
         <img
           src="/patreon.svg"

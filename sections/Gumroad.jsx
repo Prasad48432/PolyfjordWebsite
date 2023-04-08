@@ -25,7 +25,7 @@ const Gumroad = () => (
           whileInView="show"
           className={`mt-[8px] font-bold md:text-[64px] text-[26px] text-white text-center`}
         >
-          Checkout my <a className='transition ease-in-out hover:underline duration-300'  href="https://polyfjord.gumroad.com" target="_blank" rel="noopener noreferrer" >Gumroad</a>
+          Checkout my <a className='transition ease-in-out text-gray-200 underline  duration-300'  href="https://polyfjord.gumroad.com" target="_blank" rel="noopener noreferrer" >Gumroad</a>
         </motion.h2>
       <img src='/gumroad.svg' alt="patreon" className= 'relative w-[50px] h-[50px] top-[0.3rem] sm:w-[100px] sm:h-[100px] sm:top-[0.5rem]'/>
       </div>

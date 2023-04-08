@@ -26,7 +26,7 @@ const Merch = () => {
           whileInView="show"
           className={`mt-[8px] font-bold md:text-[64px] text-[26px] text-white text-center`}
         >
-          My <a className='transition ease-in-out hover:underline duration-300'  href="https://polyfjord.threadless.com" target="_blank" rel="noopener noreferrer" >Merch</a>
+          My <a className='transition ease-in-out text-gray-200 underline  duration-300'  href="https://polyfjord.threadless.com" target="_blank" rel="noopener noreferrer" >Merch</a>
         </motion.h2>
       <img src='/tshirt.svg' alt="patreon" className= 'relative w-[30px] h-[30px] top-2 sm:w-[50px] sm:h-[50px] sm:top-3'/>
       </div>

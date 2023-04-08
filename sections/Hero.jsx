@@ -40,7 +40,7 @@ const Hero = () => (
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative sm:left-[6rem]"
         />
 
-        <a href="#explore">
+        <a href="https://youtube.com/@polyfjord" target="_blank" rel="noopener noreferrer"  >
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
             <img
               src="/polyfjord_stamp.png"
