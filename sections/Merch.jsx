@@ -30,6 +30,7 @@ const Merch = () => {
         </motion.h2>
       <img src='/tshirt.svg' alt="patreon" className= 'relative w-[30px] h-[30px] top-2 sm:w-[50px] sm:h-[50px] sm:top-3'/>
       </div>
+
       <img src='/polyford_merch.png' alt='merch' className='rounded-[10px] sm:rounded-[30px] sm:h-[60vh] sm:object-contain'/>
       <a
       target="_blank"
