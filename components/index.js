@@ -1,9 +1,9 @@
 import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
-import ExploreCard from './ExploreCard';
-import StartSteps from './StartSteps';
+import YouTubeCard from './YouTubeCard';
+import ProductSteps from './ProductSteps';
 import NewFeatures from './NewFeatures';
-import InsightCard from './InsightCard';
+import PatreonCard from './PatreonCard';
 import Footer from './Footer';
 import GumroadCard from './GumroadCard';
 
@@ -11,10 +11,10 @@ export {
   Navbar,
   TitleText,
   TypingText,
-  StartSteps,
+  ProductSteps,
   NewFeatures,
-  ExploreCard,
-  InsightCard,
+  YouTubeCard,
+  PatreonCard,
   Footer,
   GumroadCard,
 };

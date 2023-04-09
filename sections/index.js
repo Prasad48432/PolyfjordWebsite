@@ -1,23 +1,21 @@
 import Hero from './Hero';
 import About from './About';
-import Explore from './Explore';
-import GetStarted from './GetStarted';
-import WhatsNew from './WhatsNew';
-import World from './World';
-import Insights from './Insights';
+import Youtube from './Youtube';
+import ProductShowcase from './ProductShowcase';
+import Patreon from './Patreon';
 import Feedback from './Feedback';
 import Gumroad from './Gumroad';
 import Merch from './Merch';
+import EmbedVideo from './EmbedVideo';
 
 export {
   Hero,
   About,
-  Explore,
-  GetStarted,
-  WhatsNew,
-  World,
-  Insights,
+  Youtube,
+  ProductShowcase,
+  Patreon,
   Feedback,
   Gumroad,
   Merch,
+  EmbedVideo,
 };

@@ -1,12 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
-import { fadeIn } from '../utils/motion';
-
-const InsightCard = ({ imgUrl, title, subtitle, index }) => (
-  <motion.div
-    variants={fadeIn('up', 'spring', index * 0.2, 0.5)}
+const PatreonCard = ({ imgUrl, title, subtitle }) => (
+  <div
     className="flex  flex-col items-center justify-center md:flex-col gap-4"
   >
     <img
@@ -30,7 +25,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
         </p>
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
-export default InsightCard;
+export default PatreonCard;

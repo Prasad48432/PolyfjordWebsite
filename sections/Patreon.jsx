@@ -1,14 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 import styles from '../styles';
 import { insights } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { InsightCard, TitleText, TypingText } from '../components';
+import { PatreonCard, TypingText } from '../components';
 import {  textVariant2 } from '../utils/motion';
 
-const Insights = () => (
+const Patreon = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -33,13 +34,15 @@ const Insights = () => (
           className="relative w-[30px] h-[30px] top-2 sm:w-[50px] sm:h-[50px] sm:top-3"
         />
       </div>
-      <div className="mt-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[30px]">
+        <motion.div
+        variants={fadeIn('up', 'spring', 0.2, 0.5)}
+      className="mt-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[30px]">
         {insights.map((item, index) => (
-          <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
+          <PatreonCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   </section>
 );
 
-export default Insights;
+export default Patreon;

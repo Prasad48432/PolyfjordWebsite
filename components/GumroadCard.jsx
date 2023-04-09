@@ -1,12 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
-import { fadeIn } from '../utils/motion';
-
-const GumroadCard = ({ imgUrl, title, subtitle, link, index }) => (
-  <motion.div
-    variants={fadeIn('up', 'spring', index * 0.2, 0.5)}
+const GumroadCard = ({ imgUrl, title, subtitle, link }) => (
+  <div
     className="flex  flex-col items-center justify-center md:flex-col gap-4"
   >
     <img
@@ -26,7 +21,7 @@ const GumroadCard = ({ imgUrl, title, subtitle, link, index }) => (
         </p>
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
 export default GumroadCard;

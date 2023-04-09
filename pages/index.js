@@ -1,5 +1,5 @@
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, Gumroad, Merch } from '../sections';
+import { About, Youtube, Feedback, ProductShowcase, Hero, Patreon, Gumroad, Merch, EmbedVideo } from '../sections';
 
 const Home = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -8,26 +8,17 @@ const Home = () => (
     <div className="relative">
       <About />
       <div className="gradient-03 z-0" />
-      <Explore />
+      <Youtube />
     </div>
     <div className="relative">
-      <GetStarted />
-      <div className="items-center justify-center flex p-3 sm:p-0">
-        <iframe
-          className="border-2 border-white p-3"
-          width="853"
-          height="480"
-          src="https://www.youtube.com/embed/JSLgXXx-4A8"
-          title="Introducing the Mechanical Creature Kit"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        />
-      </div>
+      <ProductShowcase />
       <div className="gradient-04 z-0" />
     </div>
     <div className="relative">
-      <Insights />
+      <EmbedVideo />
+    </div>
+    <div className="relative">
+      <Patreon />
       <div className="gradient-03 z-0" />
     </div>
     <div className="relative">

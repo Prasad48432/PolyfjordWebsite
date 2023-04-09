@@ -3,13 +3,13 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { startingFeatures } from '../constants';
-import { StartSteps, TitleText, TypingText } from '../components';
+import { productFeatures } from '../constants';
+import { ProductSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { navVariants } from '../utils/motion';
 import {  textVariant2 } from '../utils/motion';
 
-const GetStarted = () => (
+const ProductShowcase = () => (
   <>
     <motion.div
       variants={navVariants}
@@ -50,9 +50,9 @@ const GetStarted = () => (
           <TypingText title="| My New Releases" />
           <TitleText title={<>The Mechanical Creature Kit</>} />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-            {startingFeatures.map((feature, index) => (
+            {productFeatures.map((feature, index) => (
               <a target="_blank" href={feature.link} rel="noopener noreferrer">
-                <StartSteps
+                <ProductSteps
                   key={feature.id}
                   number={feature.price}
                   text={feature.title}
@@ -80,13 +80,8 @@ const GetStarted = () => (
           </div>
         </a>
       </motion.div>
-      <motion.h2
-      variants={textVariant2}
-      initial="hidden"
-      whileInView="show"
-      className='font-bold md:text-[40px] text-[20px] text-white text-center' >Watch the introductory Video ↓</motion.h2>
     </section>
   </>
 );
 
-export default GetStarted;
+export default ProductShowcase;

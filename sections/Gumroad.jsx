@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 import styles from '../styles';
 import {gumroad } from '../constants';
@@ -29,11 +30,13 @@ const Gumroad = () => (
         </motion.h2>
       <img src='/gumroad.svg' alt="patreon" className= 'relative w-[50px] h-[50px] top-[0.3rem] sm:w-[100px] sm:h-[100px] sm:top-[0.5rem]'/>
       </div>
-      <div className="mt-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[30px]">
+      <motion.div
+    variants={fadeIn('up', 'spring', 0.2, 0.5)}
+      className="mt-[50px] grid grid-cols-1 sm:grid-cols-3 gap-[30px]">
         {gumroad.map((item, index) => (
           <GumroadCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   </section>
 );

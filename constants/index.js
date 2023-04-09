@@ -1,4 +1,4 @@
-export const exploreWorlds = [
+export const exploreVideos = [
   {
     id: 'world-1',
     imgUrl: '/Tut1_RigidBody.jpg',
@@ -31,7 +31,7 @@ export const exploreWorlds = [
   },
 ];
 
-export const startingFeatures = [
+export const productFeatures = [
   {
     id: 'feature-1',
     title: 'Free Starter Kit',

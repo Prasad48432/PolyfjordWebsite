@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({
+const YouTubeCard = ({
   id,
   imgUrl,
   title,
@@ -59,4 +59,4 @@ const ExploreCard = ({
   </motion.div>
 );
 
-export default ExploreCard;
+export default YouTubeCard;
