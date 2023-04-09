@@ -12,6 +12,18 @@ const Home = () => (
     </div>
     <div className="relative">
       <GetStarted />
+      <div className="items-center justify-center flex p-3 sm:p-0">
+        <iframe
+          className="border-2 border-white p-3"
+          width="853"
+          height="480"
+          src="https://www.youtube.com/embed/JSLgXXx-4A8"
+          title="Introducing the Mechanical Creature Kit"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+      </div>
       <div className="gradient-04 z-0" />
     </div>
     <div className="relative">

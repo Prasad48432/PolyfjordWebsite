@@ -80,6 +80,11 @@ const GetStarted = () => (
           </div>
         </a>
       </motion.div>
+      <motion.h2
+      variants={textVariant2}
+      initial="hidden"
+      whileInView="show"
+      className='font-bold md:text-[40px] text-[20px] text-white text-center' >Watch the introductory Video ↓</motion.h2>
     </section>
   </>
 );
