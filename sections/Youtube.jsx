@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { exploreVideos } from '../constants';
-import { staggerContainer } from '../utils/motion';
+import { staggerContainer, textVariant2 } from '../utils/motion';
 import { YouTubeCard, TitleText, TypingText } from '../components';
 
 const Youtube = () => {
@@ -21,10 +21,14 @@ const Youtube = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| Popular Tutorials" textStyles="text-center" />
-        <TitleText
-          title={<>Some of my<br className="md:block hidden" />Popular Tutorials</>}
-          textStyles="text-center"
-        />
+        <motion.h2
+          variants={textVariant2}
+          initial="hidden"
+          whileInView="show"
+          className={"mt-[8px] font-bold md:text-[64px] text-[26px] text-white text-center"}
+        >
+        Some of my Popular Tutorials
+        </motion.h2>
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreVideos.map((world, index) => (
             <YouTubeCard
@@ -36,7 +40,14 @@ const Youtube = () => {
             />
           ))}
         </div>
-        <a className='text-center p-3 mt-10 text-white text-xl' target="_blank" href="https://www.youtube.com/@Polyfjord/videos" rel="noopener noreferrer" >Watch all Tutorials  ➡</a>
+        <a
+          className="text-center p-3 mt-10 text-white text-xl"
+          target="_blank"
+          href="https://www.youtube.com/@Polyfjord/videos"
+          rel="noopener noreferrer"
+        >
+          Watch all Tutorials ➡
+        </a>
       </motion.div>
     </section>
   );

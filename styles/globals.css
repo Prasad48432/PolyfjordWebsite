@@ -106,3 +106,15 @@
   filter: blur(150px);
 }
 
+.rotate_img:hover{
+  animation: boxyRotation 2s infinite linear;
+}
+
+@keyframes boxyRotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}

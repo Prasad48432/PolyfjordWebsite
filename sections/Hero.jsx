@@ -2,7 +2,6 @@
 import { GrLocation } from "react-icons/gr";
 
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
@@ -45,7 +44,7 @@ const Hero = () => (
             <img
               src="/polyfjord_stamp.png"
               alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain rounded-full border-solid border-white border-4"
+              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain rounded-full border-solid border-white border-4 rotate_img"
             />
           </div>
         </a>
