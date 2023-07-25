@@ -32,12 +32,12 @@ const YouTubeCard = ({
       </h3>
     ) : (
       <div
-        data-type="youtube"
-        className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[10px] sm:rounded-b-[14px] interactable"
+        className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[10px] sm:rounded-b-[14px]"
       >
         <a target="_blank" href={link} rel="noopener noreferrer">
           <div
-            className={`${styles.flexCenter} h-[40px] w-[100px] sm:w-[140px] sm:h-[60px] rounded-[10px] sm:rounded-[24px] glassmorphism mb-[16px]`}
+            data-type="youtube"
+            className={`${styles.flexCenter}  h-[40px] w-[100px] sm:w-[140px] sm:h-[60px] rounded-[10px] sm:rounded-[24px] glassmorphism mb-[16px] interactable`}
           >
             <img
               src="/youtube_s.svg"

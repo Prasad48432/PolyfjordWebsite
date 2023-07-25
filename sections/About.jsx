@@ -25,11 +25,11 @@ const About = () => (
         {/* Somewhere in Norway, a tiny animation studio is creating tutorials about 3D art,
          workflows and visual concepts. If you want to support this journey, please feel 
          free to check out the Polyfjord® Viewport Community on Patreon! */}
-        Somewhere in<span className="font-extrabold text-white"> Norway</span>,
+        Somewhere in<span data-type="norwegian" className="font-extrabold text-white interactable"> Norway</span>,
         a tiny animation studio is creating tutorials about
-        <span className="font-extrabold text-white"> 3D art</span>
-        <span className="font-extrabold text-white">workflows</span> and{" "}
-        <span className="font-extrabold text-white">visual concepts</span>. If
+        <span data-type="arted" className="font-extrabold text-white interactable"> 3D art</span>
+        <span data-type="arted" className="font-extrabold text-white interactable">workflows</span> and{" "}
+        <span data-type="arted" className="font-extrabold text-white interactable">visual concepts</span>. If
         you want to support this journey, please feel free to check out the{" "}
         <a
           href="https://www.patreon.com/polyfjord"

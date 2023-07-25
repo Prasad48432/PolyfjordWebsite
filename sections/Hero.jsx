@@ -16,7 +16,7 @@ const Hero = () => (
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="flex justify-center items-center flex-col relative z-10">
-          <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+          <motion.h1 data-type="digitalartist" variants={textVariant(1.1)} className={`${styles.heroHeading} interactable`}>
             Digital ARTIST
           </motion.h1>
           <motion.div
@@ -26,9 +26,10 @@ const Hero = () => (
             <img
               src="/location.svg"
               alt="/"
-              className="w-[40px] sm:w-[100px] mr-2"
+              className="w-[40px] sm:w-[100px] mr-2 interactable"
+              data-type="norway"
             />
-            <h1 className={styles.heroHeading}>NORWAY</h1>
+            <h1 className={`${styles.heroHeading}`}><span className="interactable" data-type="norway">N</span><span className="interactable" data-type="norway2">O</span><span className="interactable" data-type="norway3">R</span><span className="interactable" data-type="norway4">W</span><span className="interactable" data-type="norway5">A</span><span className="interactable" data-type="norway6">Y</span></h1>
           </motion.div>
         </div>
 

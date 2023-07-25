@@ -127,7 +127,7 @@
   #trailer {
     height: 20px;
     width: 20px;
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 20px;
     position: fixed;
     left: 0px;
@@ -146,7 +146,7 @@
   }
 
   #trailer-icon {
-    font-size: 6px;
+    font-size: 16px;
     line-height: 4px;
     opacity: 0;
     transition: opacity 400ms ease;
@@ -154,10 +154,138 @@
 }
 
 .interactable {
-  opacity: 0.95;
+  opacity: 0.99;
   transition: 0.3s ease-in-out;
 }
 
 .interactable:hover {
   opacity: 1;
+}
+
+.asborjn_head{
+  content: url(../public/asbjornhead.png);
+  width: 42px;
+  height: 42px;
+  position: relative;
+  right: 9px;
+  bottom: 9px;
+}
+
+.norway_image{
+  content: url("https://images.unsplash.com/photo-1611771341253-dadb347165a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG5vcndheXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 38px;
+}
+
+.arted_image{
+  content: url(../public/art3d.gif);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 25px;
+}
+
+.asbjorn_head_happy{
+  content: url(../public/asbjornheadhappy.png);
+  width: 23px;
+  height: 23px;
+  position: relative;
+  right: 2px;
+  bottom: 2px;
+}
+
+.norwegian{
+  content: url("https://media.tenor.com/PXEPxEKRelkAAAAC/norway-flag.gif");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 25px;
+}
+
+.blender{
+  content: url(../public/blender.png);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 20px;
+}
+.davinciresolve{
+  content: url(../public/davinciresolve.png);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 20px;
+
+}
+.soundly{
+  content: url("https://www.creativefieldrecording.com/wp-content/uploads/2016/08/Soundly-Icon-Still.png");
+  width: 23px;
+  height: 23px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 20px;
+
+}
+
+.digitalartist{
+  content: url("https://i.pinimg.com/originals/f3/ca/90/f3ca90569909f1469731003a73809712.gif");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 25px;
+
+}
+
+.norway2{
+  content: url("https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg?auto=compress&cs=tinysrgb&w=600");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 38px;
+}
+.norway3{
+  content: url("https://images.pexels.com/photos/577696/pexels-photo-577696.jpeg?auto=compress&cs=tinysrgb&w=600");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 38px;
+}
+.norway4{
+  content: url("https://images.pexels.com/photos/713081/pexels-photo-713081.jpeg?auto=compress&cs=tinysrgb&w=600");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 38px;
+}
+.norway5{
+  content: url("https://images.pexels.com/photos/358589/pexels-photo-358589.jpeg?auto=compress&cs=tinysrgb&w=600");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 38px;
+}
+.norway6{
+  content: url("https://images.pexels.com/photos/577697/pexels-photo-577697.jpeg?auto=compress&cs=tinysrgb&w=600");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 38px;
 }

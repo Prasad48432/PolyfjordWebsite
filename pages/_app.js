@@ -729,17 +729,43 @@ function MyApp({ Component, pageProps }) {
     const getTrailerClass = (type) => {
       switch (type) {
         case "youtube":
-          return "fa-brands fa-youtube fa-beat text-black";
-        case "insta":
-          return "fa-solid fa-link fa-shake text-black";
+          return "fa-brands fa-youtube fa-beat text-white";
         case "product":
-          return "fa-solid fa-shop fa-beat text-black";
+          return "fa-solid fa-shop fa-beat text-white";
         case "merch":
-          return "fa-solid fa-shirt fa-beat text-black";
+          return "fa-solid fa-shirt fa-beat text-white";
         case "discord":
-          return "fa-brands fa-discord fa-beat text-black";
+          return "fa-brands fa-discord fa-beat text-white";
         case "patreon":
-          return "fa-brands fa-patreon fa-beat text-black";
+          return "fa-brands fa-patreon fa-beat text-white";
+        case "head":
+          return "asborjn_head fa-shake";
+        case "norway":
+          return "norway_image";
+        case "arted":
+          return "arted_image";
+        case "headhappy":
+          return "asbjorn_head_happy fa-shake";
+        case "norwegian":
+          return "norwegian";
+        case "blender":
+          return "blender";
+        case "davinciresolve":
+          return "davinciresolve";
+        case "soundly":
+          return "soundly";
+        case "digitalartist":
+          return "digitalartist";
+        case "norway2":
+          return "norway2";
+        case "norway3":
+          return "norway3";
+        case "norway4":
+          return "norway4";
+        case "norway5":
+          return "norway5";
+        case "norway6":
+          return "norway6";
         default:
           return "fa-solid fa-square-up-right fa-beat text-black";
       }

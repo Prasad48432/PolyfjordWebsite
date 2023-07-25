@@ -16,7 +16,7 @@ const Footer = () => (
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+        <h4 data-type="headhappy" className="font-bold md:text-[64px] text-[44px] text-white interactable cursor-none">
           Thanks For The Visit ツ
         </h4>
         <a
@@ -46,7 +46,7 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">Polyfjord®</h4>
+          <h4 className="font-extrabold text-[24px] text-white">Polyfjord<span className='font-thin'>®</span></h4>
           <p className="font-normal text-[14px] text-white opacity-50">
             Polyfjord® is a registered trademark in Norway and the United
             States, owned by Polyfjord AS

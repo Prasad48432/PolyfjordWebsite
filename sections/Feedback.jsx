@@ -11,7 +11,7 @@ const Feedback = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }} 
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
     >
       <motion.div
@@ -20,7 +20,7 @@ const Feedback = () => (
       >
         <div className="feedback-gradient" />
         <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
+          <h4  data-type="head" className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white z-50 interactable">
             Asbjørn
           </h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
@@ -29,12 +29,12 @@ const Feedback = () => (
         </div>
 
         <p className="mt-[24px] font-normal sm:text-[16px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-gray-300">
-          If you enjoy a <b className="text-white">Norwegian</b> accent and
-          various<b className="text-white"> 3D workflows</b>, you've come to the
+          If you enjoy a <b data-type="norwegian" className="text-white interactable">Norwegian</b> accent and
+          various<b data-type="arted" className="text-white interactable"> 3D workflows</b>, you've come to the
           right place! My pipeline currently consist primarily of
-          <b className="text-white"> Blender</b>,
-          <b className="text-white"> DaVinci Resolve</b> and{" "}
-          <b className="text-white"> Soundly</b>, and I enjoy exploring
+          <b data-type="blender" className="text-white interactable"> Blender</b>,
+          <b data-type="davinciresolve" className="text-white interactable"> DaVinci Resolve</b> and{" "}
+          <b data-type="soundly" className="text-white interactable"> Soundly</b>, and I enjoy exploring
           workflows that use open source, free and/or premium software. Since
           the summer of 2021 I've been making blender tutorials on YouTube
           full-time, which has become my dream job! If you want to support my
