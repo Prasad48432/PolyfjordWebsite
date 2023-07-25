@@ -1,9 +1,7 @@
 'use client';
 
 const PatreonCard = ({ imgUrl, title, subtitle }) => (
-  <div
-    className="flex  flex-col items-center justify-center md:flex-col gap-4"
-  >
+  <div className="flex  flex-col items-center justify-center md:flex-col gap-4">
     <img
       src={imgUrl}
       alt="planet-01"
@@ -13,8 +11,10 @@ const PatreonCard = ({ imgUrl, title, subtitle }) => (
       <div className="flex-1 flex flex-col max-w-[650px]">
         <a
           href="https://www.patreon.com/polyfjord"
+          data-type="patreon"
           target="_blank"
           rel="noopener noreferrer"
+          className="interactable"
         >
           <h4 className="font-normal lg:text-[30px] text-[26px] text-white text-center">
             {title}

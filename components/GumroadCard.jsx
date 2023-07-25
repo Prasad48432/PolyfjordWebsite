@@ -1,9 +1,7 @@
 'use client';
 
 const GumroadCard = ({ imgUrl, title, subtitle, link }) => (
-  <div
-    className="flex  flex-col items-center justify-center md:flex-col gap-4"
-  >
+  <div className="flex  flex-col items-center justify-center md:flex-col gap-4">
     <img
       src={imgUrl}
       alt="planet-01"
@@ -11,7 +9,13 @@ const GumroadCard = ({ imgUrl, title, subtitle, link }) => (
     />
     <div className="w-full flex justify-between items-center">
       <div className="flex-1 flex flex-col max-w-[650px]">
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={link}
+          data-type="product"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="interactable"
+        >
           <h4 className="font-normal lg:text-[30px] text-[26px] text-white text-center">
             {title}
           </h4>

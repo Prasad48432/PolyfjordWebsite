@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { productFeatures } from '../constants';
-import { ProductSteps, TitleText, TypingText } from '../components';
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import { navVariants } from '../utils/motion';
-import {  textVariant2 } from '../utils/motion';
+import styles from "../styles";
+import { productFeatures } from "../constants";
+import { ProductSteps, TitleText, TypingText } from "../components";
+import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import { navVariants } from "../utils/motion";
+import { textVariant2 } from "../utils/motion";
 
 const ProductShowcase = () => (
   <>
@@ -73,6 +73,8 @@ const ProductShowcase = () => (
           target="_blank"
           href="https://blendermarket.com/products/mechanical-creature-kit"
           rel="noopener noreferrer"
+          data-type="product"
+          className="interactable"
         >
           <div className="sm:w-[55%] rounded-[10px] glassmorphism flex sm:ml-[-50px]np justify-center items-center sm:bottom-[5rem] relative">
             <h1 className="text-white p-3 capitalize">checkout product</h1>

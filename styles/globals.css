@@ -11,26 +11,22 @@
 }
 
 .gradient-01 {
-  background-image: linear-gradient(
-    270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
-  );
+  background-image: linear-gradient(270deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%,
+      hsl(221deg 73% 70%) 74%,
+      hsl(220deg 76% 51%) 100%);
   filter: blur(125px);
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
+  background: linear-gradient(97.86deg,
+      #a509ff 0%,
+      #34acc7 53.65%,
+      #a134c7 100%);
 }
 
 .gradient-02 {
@@ -77,11 +73,9 @@
 }
 
 .gradient-05 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .feedback-gradient {
@@ -106,15 +100,64 @@
   filter: blur(150px);
 }
 
-.rotate_img:hover{
-  animation: boxyRotation 2s infinite linear;
+.rotate_img:hover {
+  animation: boxyRotation 10s infinite linear;
 }
 
-@keyframes boxyRotation{
-  from{
+@keyframes boxyRotation {
+  from {
     transform: rotate(0deg);
   }
-  to{
+
+  to {
     transform: rotate(359deg);
   }
+}
+
+
+@media (min-width:0px) and (max-width:639px) {
+  #trailer {
+    display: hidden;
+  }
+}
+
+
+
+@media (min-width:640px) {
+  #trailer {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1000000;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 500ms ease;
+    display: grid;
+    place-items: center;
+  }
+
+
+  #trailer:not([data-type=""])>#trailer-icon {
+    opacity: 1;
+  }
+
+  #trailer-icon {
+    font-size: 6px;
+    line-height: 4px;
+    opacity: 0;
+    transition: opacity 400ms ease;
+  }
+}
+
+.interactable {
+  opacity: 0.95;
+  transition: 0.3s ease-in-out;
+}
+
+.interactable:hover {
+  opacity: 1;
 }

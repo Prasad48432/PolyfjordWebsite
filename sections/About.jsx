@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { TypingText } from '../components';
+import { motion } from "framer-motion";
+import { TypingText } from "../components";
 
-import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import styles from "../styles";
+import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -19,21 +19,29 @@ const About = () => (
       <TypingText title="| About Polyfjord" textStyles="text-center" />
 
       <motion.p
-        variants={fadeIn('up', 'tween', 0.2, 1)}
+        variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
         {/* Somewhere in Norway, a tiny animation studio is creating tutorials about 3D art,
          workflows and visual concepts. If you want to support this journey, please feel 
          free to check out the Polyfjord® Viewport Community on Patreon! */}
-        Somewhere in<span className="font-extrabold text-white"> Norway</span>
-        , a tiny animation studio is creating tutorials about<span className="font-extrabold text-white"> 3D art</span>
-        <span className="font-extrabold text-white">workflows</span> and <span className="font-extrabold text-white">visual concepts</span>.
-        If you want to support this journey, please feel 
-         free to check out the <a href='https://www.patreon.com/polyfjord' className='underline text-white font-bold'>Polyfjord  Viewport Community on Patreon</a>
+        Somewhere in<span className="font-extrabold text-white"> Norway</span>,
+        a tiny animation studio is creating tutorials about
+        <span className="font-extrabold text-white"> 3D art</span>
+        <span className="font-extrabold text-white">workflows</span> and{" "}
+        <span className="font-extrabold text-white">visual concepts</span>. If
+        you want to support this journey, please feel free to check out the{" "}
+        <a
+          href="https://www.patreon.com/polyfjord"
+          data-type="patreon"
+          className="underline text-white font-bold interactable"
+        >
+          Polyfjord Viewport Community on Patreon
+        </a>
       </motion.p>
 
       <motion.img
-        variants={fadeIn('up', 'tween', 0.3, 1)}
+        variants={fadeIn("up", "tween", 0.3, 1)}
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"

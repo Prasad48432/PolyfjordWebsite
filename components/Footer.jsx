@@ -23,6 +23,8 @@ const Footer = () => (
           target="_blank"
           href="https://www.youtube.com/@Polyfjord"
           rel="noopener noreferrer"
+          className="interactable"
+          data-type="youtube"
         >
           <button
             type="button"

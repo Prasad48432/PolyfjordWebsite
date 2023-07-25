@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
+import styles from "../styles";
+import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 
 const Feedback = () => (
   <section className={`${styles.paddings}`}>
@@ -43,6 +43,8 @@ const Feedback = () => (
             target="_blank"
             href="https://www.patreon.com/polyfjord"
             rel="noopener noreferrer"
+            className="interactable"
+            data-type="patreon"
           >
             <b className="text-white hover:underline cursor-pointer">
               {" "}
@@ -57,7 +59,12 @@ const Feedback = () => (
             target="_blank"
             href="https://discord.com/invite/polyfjord"
             rel="noopener noreferrer"
-          ><b className="text-white hover:underline cursor-pointer">Polyfjord Viewport Community on Discord</b>
+            data-type="discord"
+            className="interactable"
+          >
+            <b className="text-white hover:underline cursor-pointer">
+              Polyfjord Viewport Community on Discord
+            </b>
           </a>
         </p>
       </motion.div>

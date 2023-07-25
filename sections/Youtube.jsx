@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from "react";
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { exploreVideos } from '../constants';
-import { staggerContainer, textVariant2 } from '../utils/motion';
-import { YouTubeCard, TitleText, TypingText } from '../components';
+import styles from "../styles";
+import { exploreVideos } from "../constants";
+import { staggerContainer, textVariant2 } from "../utils/motion";
+import { YouTubeCard, TitleText, TypingText } from "../components";
 
 const Youtube = () => {
-  const [active, setActive] = useState('world-2');
+  const [active, setActive] = useState("world-2");
 
   return (
     <section className={`${styles.paddings}`} id="explore">
@@ -25,9 +25,11 @@ const Youtube = () => {
           variants={textVariant2}
           initial="hidden"
           whileInView="show"
-          className={"mt-[8px] font-bold md:text-[64px] text-[26px] text-white text-center"}
+          className={
+            "mt-[8px] font-bold md:text-[64px] text-[26px] text-white text-center"
+          }
         >
-        Some of my Popular Tutorials
+          Some of my Popular Tutorials
         </motion.h2>
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreVideos.map((world, index) => (
@@ -41,7 +43,8 @@ const Youtube = () => {
           ))}
         </div>
         <a
-          className="text-center p-3 mt-10 text-white text-xl"
+          data-type="youtube"
+          className="text-center p-3 mt-10 text-white text-xl interactable"
           target="_blank"
           href="https://www.youtube.com/@Polyfjord/videos"
           rel="noopener noreferrer"

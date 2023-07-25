@@ -1,11 +1,11 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import {gumroad } from '../constants';
-import { staggerContainer } from '../utils/motion';
-import { GumroadCard, TitleText, TypingText } from '../components';
-import {  textVariant2 } from '../utils/motion';
+import styles from "../styles";
+import { gumroad } from "../constants";
+import { staggerContainer } from "../utils/motion";
+import { GumroadCard, TitleText, TypingText } from "../components";
+import { textVariant2 } from "../utils/motion";
 
 const Merch = () => {
   return (
@@ -28,7 +28,8 @@ const Merch = () => {
             >
               My{" "}
               <a
-                className="transition ease-in-out text-gray-200 underline  duration-300"
+                data-type="merch"
+                className="transition ease-in-out text-gray-200 underline  duration-300 interactable"
                 href="https://polyfjord.threadless.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +54,10 @@ const Merch = () => {
             href="https://polyfjord.threadless.com"
             rel="noopener noreferrer"
           >
-            <div className="sm:w-[70%] rounded-[10px] glassmorphism flex  justify-center items-center relative sm:ml-[190px] mt-3 sm:mt-5">
+            <div
+              data-type="merch"
+              className="sm:w-[70%] rounded-[10px] glassmorphism flex  justify-center items-center relative sm:ml-[190px] mt-3 sm:mt-5 interactable"
+            >
               <h1 className="text-white p-3 capitalize">
                 checkout merch on threadless.com
               </h1>
@@ -64,6 +68,6 @@ const Merch = () => {
       </section>
     </>
   );
-}
+};
 
-export default Merch
+export default Merch;
