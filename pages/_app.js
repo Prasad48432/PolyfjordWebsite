@@ -745,7 +745,7 @@ function MyApp({ Component, pageProps }) {
         case "arted":
           return "arted_image";
         case "headhappy":
-          return "asbjorn_head_happy fa-shake";
+          return "asborjn_head_happy fa-shake";
         case "norwegian":
           return "norwegian";
         case "blender":
@@ -766,6 +766,10 @@ function MyApp({ Component, pageProps }) {
           return "norway5";
         case "norway6":
           return "norway6";
+        case "workflow":
+          return "workflow";
+        case "visual":
+          return "visual";
         default:
           return "fa-solid fa-square-up-right fa-beat text-black";
       }

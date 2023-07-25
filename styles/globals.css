@@ -10,6 +10,19 @@
   scroll-behavior: smooth;
 }
 
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  margin-block: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to top, #7d7d7d 0%, #a1a1a1 52%, #9b9b9b 100%);
+  border-radius: 10px;
+}
 .gradient-01 {
   background-image: linear-gradient(270deg,
       hsl(295deg 76% 51%) 0%,
@@ -163,12 +176,12 @@
 }
 
 .asborjn_head{
-  content: url(../public/asbjornhead.png);
-  width: 42px;
-  height: 42px;
+  content: url(../public/asbjornheadhappy.png);
+  width: 30px;
+  height: 30px;
   position: relative;
-  right: 9px;
-  bottom: 9px;
+  right: 2px;
+  top: 12px;
 }
 
 .norway_image{
@@ -189,13 +202,13 @@
   bottom: 25px;
 }
 
-.asbjorn_head_happy{
+.asborjn_head_happy{
   content: url(../public/asbjornheadhappy.png);
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
   position: relative;
   right: 2px;
-  bottom: 2px;
+  bottom: 18px;
 }
 
 .norwegian{
@@ -239,7 +252,7 @@
 }
 
 .digitalartist{
-  content: url("https://i.pinimg.com/originals/f3/ca/90/f3ca90569909f1469731003a73809712.gif");
+  content: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJ0azdhczk5YnZwZW02MTR0cjJscGFjajB0eHpjMWs4cTc3b29oYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yyKeJYQwf3M5O/giphy.gif");
   width: 30px;
   height: 30px;
   position: relative;
@@ -247,6 +260,25 @@
   right: 8px;
   bottom: 25px;
 
+}
+
+.workflow{
+  content: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnAwMjNlNzB2OHFxdjgwc3RncTV4bnFsOHJxYjBveTd6YWxxYnR3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/jtLNNZ2hjj3Ge0XG8Y/giphy.gif");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 25px;
+}
+.visual{
+  content: url("https://media4.giphy.com/media/gLRLGCqiB9HCewNpOi/giphy.gif?cid=ecf05e47k61ooie99f5b9x6c92m1xqagjas9hwmxn1owarq2&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+  right: 8px;
+  bottom: 25px;
 }
 
 .norway2{
@@ -288,4 +320,25 @@
   position: relative;
   right: 8px;
   bottom: 38px;
+}
+
+
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
